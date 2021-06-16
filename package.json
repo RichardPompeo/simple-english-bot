@@ -1,0 +1,20 @@
+{
+  "name": "whatsapp-bot-for-english",
+  "version": "1.0.0",
+  "description": "A whatsapp bot to search words in english, returning translation, part of speech, synonyms, etc...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "richard",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "free-translate": "^0.4.0",
+    "translate-text": "^0.4.1",
+    "venom-bot": "^3.0.18"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
