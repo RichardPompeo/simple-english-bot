@@ -2,7 +2,7 @@
   "name": "whatsapp-bot-for-english",
   "version": "1.0.0",
   "description": "A whatsapp bot to search words in english, returning translation, part of speech, synonyms, etc...",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,9 +10,11 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
     "free-translate": "^0.4.0",
+    "mongoose": "^5.13.7",
     "translate-text": "^0.4.1",
-    "venom-bot": "^3.0.18"
+    "venom-bot": "^3.0.21"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
