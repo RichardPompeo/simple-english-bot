@@ -1,7 +1,7 @@
 {
-  "name": "whatsapp-bot-for-english",
-  "version": "1.0.0",
-  "description": "A whatsapp bot to search words in english, returning translation, part of speech, synonyms, etc...",
+  "name": "simple-english-bot",
+  "version": "2.0.0",
+  "description": "O Bot de inglês da plataforma Simple English!",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
