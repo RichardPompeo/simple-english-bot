@@ -6,7 +6,7 @@ const redirectToCommands = async (client, message) => {
 
   await client.sendText(
     message.from,
-    "Você voltou para a seleção de comandos!"
+    "Você voltou para o menu de seleção!"
   );
 
   stages.step[users.list[message.from].stage].obj.execute(client, message);

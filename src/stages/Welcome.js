@@ -1,4 +1,5 @@
 const Authorized = require("../models/authorized");
+const Administrator = require("../models/administrator");
 
 const options = require("../utils/objects/options");
 const users = require("../utils/objects/users");
@@ -6,6 +7,13 @@ const stages = require("../utils/objects/stages");
 
 const execute = async (client, message) => {
   const number = message.from;
+
+  if (await Administrator.findOne({ number })) {
+    return await stages.step[(users.list[number].stage = 6)].obj.execute(
+      client,
+      message
+    );
+  }
 
   if (await Authorized.findOne({ number })) {
     return await stages.step[(users.list[number].stage = 3)].obj.execute(

@@ -27,6 +27,22 @@ const stages = {
     description: "SearchWord",
     obj: require("../../functions/SearchWord"),
   },
+  6: {
+    description: "AdministratorOptions",
+    obj: require("../../stages/AdministratorOptions"),
+  },
+  7: {
+    description: "ChoiceOptions",
+    obj: require("../../stages/ChoiceOptions"),
+  },
+  8: {
+    description: "AdministratorPanel",
+    obj: require("../../stages/AdministratorPanel"),
+  },
+  9: {
+    description: "ChoiceAdmCommands",
+    obj: require("../../stages/ChoiceAdmCommands"),
+  },
 };
 
 exports.step = stages;
